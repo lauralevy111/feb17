@@ -8,7 +8,7 @@ public class Email {
     private String password;
     private String department;
     private int mailboxCapacity;
-    private int defaultPasswordLength;
+    private int defaultPasswordLength = 10;
     private String alertnateEmail;
 
     //Constructor to receive first name and last name

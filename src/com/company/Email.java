@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Email {
     private String firstName;
     private String lastName;
@@ -17,7 +19,19 @@ public class Email {
         //TODO: call a method askign for the department -return the department
     }
 
-    //TODO: ask for the department
+    // ask for the department
+    private String setDepartment(){
+        String department = "";
+
+        System.out.println("enter the deparmtent :\n1 for Sales \n2 for Development \n3 for Accounting");
+        Scanner in = new Scanner(System.in);
+        int depChoice = in.nextInt();
+        if (depChoice == 1){ department = "sales"; }
+        else if (depChoice==2) { department = "dev";}
+        else if (depChoice == 3) {department = "acct";}
+
+        return department;
+    }
 
     //TODO: generate a random password
 

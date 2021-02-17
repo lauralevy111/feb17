@@ -20,8 +20,8 @@ public class Email {
         this.department = setDepartment();
         System.out.println("department: " + this.department);
 
-        //TODO: call method that returns a random password
-        
+        // call method that returns a random password
+        this.password = randomPassword(8);
     }
 
     // ask for the department

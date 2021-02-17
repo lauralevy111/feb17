@@ -19,6 +19,9 @@ public class Email {
         // call method asking for the department -return the department
         this.department = setDepartment();
         System.out.println("department: " + this.department);
+
+        //TODO: call method that returns a random password
+        
     }
 
     // ask for the department

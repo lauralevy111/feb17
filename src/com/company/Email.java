@@ -18,6 +18,7 @@ public class Email {
 
         // call method asking for the department -return the department
         this.department = setDepartment();
+        System.out.println("department: " + this.department);
     }
 
     // ask for the department

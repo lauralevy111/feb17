@@ -25,6 +25,8 @@ public class Email {
         this.password = randomPassword(defaultPasswordLength);
         //^will create null pointer exception bc defaultPasswordLength is null
         System.out.println("your password is: " + this.password);
+
+        //TODO:call method to combine elements and generate email
     }
 
     // ask for the department
@@ -56,6 +58,7 @@ public class Email {
         return new String(password);
 
     }
+    //todo: generate email
 
     //TODO: set the mailbox capacity
 

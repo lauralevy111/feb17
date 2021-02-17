@@ -58,8 +58,7 @@ public class Email {
         return new String(password);
 
     }
-    //todo: generate email
-
+    
     //TODO: set the mailbox capacity
 
     //TODO: set alternate email

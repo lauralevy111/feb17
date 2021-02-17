@@ -16,14 +16,15 @@ public class Email {
         this.lastName= lastName;
         System.out.println("email created: " +this.firstName + " " + this.lastName);
 
-        //TODO: call a method askign for the department -return the department
+        // call method asking for the department -return the department
+        this.department = setDepartment();
     }
 
     // ask for the department
     private String setDepartment(){
         String department = "";
 
-        System.out.println("enter the deparmtent :\n1 for Sales \n2 for Development \n3 for Accounting");
+        System.out.println("enter the deparmtent :\n1 for Sales \n2 for Development \n3 for Accounting \n0 for NA");
         Scanner in = new Scanner(System.in);
         int depChoice = in.nextInt();
         if (depChoice == 1){ department = "sales"; }

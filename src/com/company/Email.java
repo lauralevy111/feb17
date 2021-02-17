@@ -8,6 +8,7 @@ public class Email {
     private String password;
     private String department;
     private int mailboxCapacity;
+    private int defaultPasswordLength;
     private String alertnateEmail;
 
     //Constructor to receive first name and last name
@@ -21,7 +22,9 @@ public class Email {
         System.out.println("department: " + this.department);
 
         // call method that returns a random password
-        this.password = randomPassword(8);
+        this.password = randomPassword(defaultPasswordLength);
+        //^will create null pointer exception bc defaultPasswordLength is null
+        System.out.println("your password is: " + this.password);
     }
 
     // ask for the department

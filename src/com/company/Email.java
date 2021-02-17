@@ -7,26 +7,33 @@ public class Email {
     private String lastName;
     private String password;
     private String department;
+
+    public String email;
+
     private int mailboxCapacity;
     private int defaultPasswordLength = 10;
     private String alertnateEmail;
+    private String companysuffix = "lauracorp.com";
 
     //Constructor to receive first name and last name
     public Email (String firstName, String lastName){
         this.firstName = firstName;
         this.lastName= lastName;
-        System.out.println("email created: " +this.firstName + " " + this.lastName);
+        System.out.println("email created for: " +this.firstName + " " + this.lastName);
 
         // call method asking for the department -return the department
         this.department = setDepartment();
-        System.out.println("department: " + this.department);
+        //System.out.println("department: " + this.department);
 
         // call method that returns a random password
         this.password = randomPassword(defaultPasswordLength);
         //^will create null pointer exception bc defaultPasswordLength is null
         System.out.println("your password is: " + this.password);
 
-        //TODO:call method to combine elements and generate email
+        //combine elements and generate email
+        email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companysuffix;
+        System.out.println("email: "+ email);
+
     }
 
     // ask for the department
@@ -58,7 +65,7 @@ public class Email {
         return new String(password);
 
     }
-    
+
     //TODO: set the mailbox capacity
 
     //TODO: set alternate email

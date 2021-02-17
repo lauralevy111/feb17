@@ -30,6 +30,7 @@ public class Email {
         if (depChoice == 1){ department = "sales"; }
         else if (depChoice==2) { department = "dev";}
         else if (depChoice == 3) {department = "acct";}
+        else if (depChoice == 0) {department = "na";}
 
         return department;
     }

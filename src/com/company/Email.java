@@ -8,7 +8,11 @@ public class Email {
     private int mailboxCapacity;
     private String alertnateEmail;
 
-    //TODO: constructor to receive the firstname and lastname
+
+    public Email (String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName= lastName;
+    }
 
     //TODO: ask for the department
 

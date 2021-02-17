@@ -14,6 +14,7 @@ public class Email {
         this.lastName= lastName;
         System.out.println("email created: " +this.firstName + " " + this.lastName);
 
+        //TODO: call a method askign for the department -return the department
     }
 
     //TODO: ask for the department

@@ -8,7 +8,7 @@ public class Email {
     private int mailboxCapacity;
     private String alertnateEmail;
 
-
+    //Constructor to receive first name and last name
     public Email (String firstName, String lastName){
         this.firstName = firstName;
         this.lastName= lastName;

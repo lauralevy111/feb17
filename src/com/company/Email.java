@@ -76,6 +76,6 @@ public class Email {
         this.alertnateEmail=altEmail;
     }
 
-    //TODO: change the email
+    //TODO: change the password
 
 }

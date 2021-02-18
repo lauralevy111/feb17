@@ -86,7 +86,12 @@ public class Email {
     public String getAlternateEmail() { return alertnateEmail; }
     public String getPassword() { return password; }
 
-    //todo: showInfo() method
+    // showInfo()
+    public String showInfo() {
+        return "DISPLAY NAME: "+firstName+" "+lastName +
+                "COMPANY EMAIL: "+email+
+                "MAILBOX CAPACITY: "+mailboxCapacity+" mb";
+    }
 
 
 

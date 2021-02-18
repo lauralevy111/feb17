@@ -6,5 +6,6 @@ public class Main {
         Email em1 = new Email("Harry","Styles");
 
         em1.setAlternateEmail("hs@syco.com");
+        System.out.println(em1.getAlternateEmail());
     }
 }

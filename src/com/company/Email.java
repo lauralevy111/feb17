@@ -83,7 +83,8 @@ public class Email {
 
     //GETTER METHODS
     public int getMailboxCapacity(){ return mailboxCapacity; }
-    
+    public String getAlternateEmail() { return alertnateEmail; }
+
 
 
 

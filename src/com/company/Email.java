@@ -81,6 +81,10 @@ public class Email {
         this.password=newPassword;
     }
 
-    //TODO: GETTER METHODS
+    //GETTER METHODS
+    public int getMailboxCapacity(){ return mailboxCapacity; }
+    
+
+
 
 }

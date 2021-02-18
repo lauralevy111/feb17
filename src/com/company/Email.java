@@ -71,7 +71,10 @@ public class Email {
         this.mailboxCapacity=capacity;
     }
 
-    //TODO: set alternate email
+    //set alternate email
+    public void setAlternateEmail(String altEmail){
+        this.alertnateEmail=altEmail;
+    }
 
     //TODO: change the email
 

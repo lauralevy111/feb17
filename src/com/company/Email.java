@@ -86,6 +86,8 @@ public class Email {
     public String getAlternateEmail() { return alertnateEmail; }
     public String getPassword() { return password; }
 
+    //todo: showInfo() method
+
 
 
 

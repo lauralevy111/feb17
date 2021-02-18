@@ -76,6 +76,9 @@ public class Email {
         this.alertnateEmail=altEmail;
     }
 
-    //TODO: change the password
+    //change the password
+    public void changePassword(String newPassword){
+        this.password=newPassword;
+    }
 
 }

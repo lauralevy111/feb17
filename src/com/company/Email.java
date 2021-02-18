@@ -10,7 +10,7 @@ public class Email {
 
     public String email;
 
-    private int mailboxCapacity;
+    private int mailboxCapacity=100;
     private int defaultPasswordLength = 10;
     private String alertnateEmail;
     private String companysuffix = "lauracorp.com";
@@ -66,7 +66,10 @@ public class Email {
 
     }
 
-    //TODO: set the mailbox capacity
+    //set the mailbox capacity
+    public void setMailboxCapacity(int capacity){
+        this.mailboxCapacity=capacity;
+    }
 
     //TODO: set alternate email
 

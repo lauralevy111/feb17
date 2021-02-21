@@ -46,6 +46,7 @@ public class Email {
         if (depChoice == 1){ department = "sales"; }
         else if (depChoice==2) { department = "dev";}
         else if (depChoice == 3) {department = "acct";}
+        else if (depChoice == 4) {department = "hr";}
         //if(depChoice == 0) department = not applicable
         else if (depChoice == 0) {department = "na";}
 
